@@ -5,12 +5,52 @@ import java.util.*;
 
 import excepciones.*;
 
+public class App
+{
 
 /*
- * Ejercicio 58
+    APARTADO 8
+
+    Ejercicio 31
+
+    A continuación, el código mínimo para que el método pase el primer test:
+
+    public static int sumaNEnteros(int n){
+        return 1;
+    }
+
+
+    A continuación, el código para pasar el segundo test:
  */
-public class App 
-{
+    public static int sumaNEnteros(int n) throws NumeroNegativoException {
+        try {
+            if (n > 0) {
+                int suma = 0;
+                for (int i = 0; i <= n; i++) {
+                    suma += i;
+                }
+                return suma;
+            } else {
+                throw new NumeroNegativoException();
+            }
+        } catch (NumeroNegativoException e){
+            System.out.println("Recuerde que la suma solo puede darse para los n primeros enteros POSITIVOS");
+            return -1;
+        }
+    }
+
+    /*
+    Ejercicio 33
+     */
+
+
+
+/*
+  APARTADO 10
+
+  Ejercicio 58
+ */
+
 
     //Después de ver fallar el test, escribimos la implementación de los métodos
     //necesarios.
@@ -70,6 +110,8 @@ public class App
     }
 
     /*
+    APARTADO 11
+
     Ejercicio 60
      */
     public static double mediaArmonica(List<Double> datos) throws ListaVaciaException, ListaConCeroException, SumaInversosEsCeroException {
