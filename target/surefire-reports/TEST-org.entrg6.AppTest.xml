@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="org.entrg6.AppTest" time="0.079" tests="16" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="org.entrg6.AppTest" time="0.076" tests="15" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="22"/>
     <property name="sun.cpu.isalist" value="amd64"/>
     <property name="sun.jnu.encoding" value="Cp1252"/>
-    <property name="java.class.path" value="E:\Universidad\Asignaturas\Programacion_II\Ejercicios\Entrega_6\ejercicio10\target\test-classes;E:\Universidad\Asignaturas\Programacion_II\Ejercicios\Entrega_6\ejercicio10\target\classes;C:\Users\pablo\.m2\repository\junit\junit\4.13.1\junit-4.13.1.jar;C:\Users\pablo\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;"/>
+    <property name="java.class.path" value="E:\Universidad\Asignaturas\Programacion_II\Ejercicios\Entrega_6\target\test-classes;E:\Universidad\Asignaturas\Programacion_II\Ejercicios\Entrega_6\target\classes;C:\Users\pablo\.m2\repository\junit\junit\4.13.1\junit-4.13.1.jar;C:\Users\pablo\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;"/>
     <property name="java.vm.vendor" value="Oracle Corporation"/>
     <property name="sun.arch.data.model" value="64"/>
     <property name="user.variant" value=""/>
@@ -15,9 +15,9 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="ES"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-22\bin"/>
-    <property name="sun.java.command" value="C:\Users\pablo\AppData\Local\Temp\surefire8069475555454790584\surefirebooter12390179496790244807.jar C:\Users\pablo\AppData\Local\Temp\surefire8069475555454790584 2025-03-22T17-49-02_081-jvmRun1 surefire17409607438004231978tmp surefire_04805252974835537185tmp"/>
+    <property name="sun.java.command" value="C:\Users\pablo\AppData\Local\Temp\surefire11529489221332954877\surefirebooter1896279532573107537.jar C:\Users\pablo\AppData\Local\Temp\surefire11529489221332954877 2025-03-22T17-57-15_759-jvmRun1 surefire12613158688379634491tmp surefire_011957253414263772400tmp"/>
     <property name="jdk.debug" value="release"/>
-    <property name="surefire.test.class.path" value="E:\Universidad\Asignaturas\Programacion_II\Ejercicios\Entrega_6\ejercicio10\target\test-classes;E:\Universidad\Asignaturas\Programacion_II\Ejercicios\Entrega_6\ejercicio10\target\classes;C:\Users\pablo\.m2\repository\junit\junit\4.13.1\junit-4.13.1.jar;C:\Users\pablo\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;"/>
+    <property name="surefire.test.class.path" value="E:\Universidad\Asignaturas\Programacion_II\Ejercicios\Entrega_6\target\test-classes;E:\Universidad\Asignaturas\Programacion_II\Ejercicios\Entrega_6\target\classes;C:\Users\pablo\.m2\repository\junit\junit\4.13.1\junit-4.13.1.jar;C:\Users\pablo\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
     <property name="user.home" value="C:\Users\pablo"/>
     <property name="user.language" value="es"/>
@@ -25,12 +25,12 @@
     <property name="java.version.date" value="2024-07-16"/>
     <property name="java.home" value="C:\Program Files\Java\jdk-22"/>
     <property name="file.separator" value="\"/>
-    <property name="basedir" value="E:\Universidad\Asignaturas\Programacion_II\Ejercicios\Entrega_6\ejercicio10"/>
+    <property name="basedir" value="E:\Universidad\Asignaturas\Programacion_II\Ejercicios\Entrega_6"/>
     <property name="java.vm.compressedOopsMode" value="Zero based"/>
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\pablo\AppData\Local\Temp\surefire8069475555454790584\surefirebooter12390179496790244807.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\pablo\AppData\Local\Temp\surefire11529489221332954877\surefirebooter1896279532573107537.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="22.0.2+9-70"/>
@@ -45,7 +45,7 @@
     <property name="java.vendor.url.bug" value="https://bugreport.java.com/bugreport/"/>
     <property name="java.io.tmpdir" value="C:\Users\pablo\AppData\Local\Temp\"/>
     <property name="java.version" value="22.0.2"/>
-    <property name="user.dir" value="E:\Universidad\Asignaturas\Programacion_II\Ejercicios\Entrega_6\ejercicio10"/>
+    <property name="user.dir" value="E:\Universidad\Asignaturas\Programacion_II\Ejercicios\Entrega_6"/>
     <property name="os.arch" value="amd64"/>
     <property name="java.vm.specification.name" value="Java Virtual Machine Specification"/>
     <property name="sun.os.patch.level" value=""/>
@@ -58,13 +58,12 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="66.0"/>
   </properties>
-  <testcase name="testEXTaylorRecursivoCeroTodo" classname="org.entrg6.AppTest" time="0"/>
-  <testcase name="testMediaArmonicaNegativos" classname="org.entrg6.AppTest" time="0"/>
-  <testcase name="shouldAnswerWithTrue" classname="org.entrg6.AppTest" time="0"/>
+  <testcase name="testEXTaylorRecursivoCeroTodo" classname="org.entrg6.AppTest" time="0.013"/>
+  <testcase name="testMediaArmonicaNegativos" classname="org.entrg6.AppTest" time="0.003"/>
   <testcase name="testEXTaylorRecursivoCeroN" classname="org.entrg6.AppTest" time="0"/>
   <testcase name="testEXTaylorRecursivoCeroX" classname="org.entrg6.AppTest" time="0"/>
   <testcase name="testEXTaylorNegativo" classname="org.entrg6.AppTest" time="0"/>
-  <testcase name="testMediaArmonicaElemento0" classname="org.entrg6.AppTest" time="0.016"/>
+  <testcase name="testMediaArmonicaElemento0" classname="org.entrg6.AppTest" time="0"/>
   <testcase name="testEXTaylor" classname="org.entrg6.AppTest" time="0"/>
   <testcase name="testEXTaylorRecursivoNegativo" classname="org.entrg6.AppTest" time="0"/>
   <testcase name="testEXTaylorRecursivo" classname="org.entrg6.AppTest" time="0"/>
