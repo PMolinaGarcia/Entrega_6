@@ -6,9 +6,11 @@ import excepciones.SumaInversosEsCeroException;
 import org.junit.Test;
 import static org.junit.Assert.*;
 import java.util.*;
+import java.util.stream.DoubleStream;
+import java.util.stream.IntStream;
 
 
-public class AppTest 
+public class AppTest
 {
 
 
@@ -117,6 +119,59 @@ public class AppTest
         assertEquals(2.1898, App.mediaArmonica(lista1), 0.0001);
     }
 
-
+    @Test
+    public void testSumaProgrGeom() {
+        double primerTermino = 1.0;
+        double razon = 2.0;
+        int n = 4;
+        DoubleStream progresion = DoubleStream.iterate(primerTermino, x -> x*razon).limit(n);
+        assertEquals(15,App.sumaProgrGeom(progresion),0);
+    }
+    @Test
+    public void testSumaProgrGeomVacia() {
+        Double[] array = {};
+        DoubleStream progresion = Arrays.stream(array).mapToDouble(x->x);
+        assertEquals(0,App.sumaProgrGeom(progresion),0);
+    }
+    @Test
+    public void testSumaProgrGeom0() {
+        double primerTermino = 0.0;
+        double razon = 2.0;
+        int n = 70;
+        DoubleStream progresion = DoubleStream.iterate(primerTermino, x -> x*razon).limit(n);
+        assertEquals(0,App.sumaProgrGeom(progresion),0);
+    }
+    @Test
+    public void testSumaProgrGeomNegativa() {
+        double primerTermino = 1.0;
+        double razon = -3.0;
+        int n = 4;
+        DoubleStream progresion = DoubleStream.iterate(primerTermino, x -> x*razon).limit(n);
+        assertEquals(-20.0,App.sumaProgrGeom(progresion),0);
+    }
+    @Test
+    public void testSumaProgrGeomCreandoProgr() {
+        assertEquals(15, App.sumaProgrGeomCreandoProgr(1,2,4), 0);
+    }
+    @Test
+    public void testSumaProgrGeomCreandoProgr0() {
+        assertEquals(0, App.sumaProgrGeomCreandoProgr(0,2,4), 0);
+    }
+    @Test
+    public void testSumaProgrGeomCreandoProgrNegativa() {
+        assertEquals(234, App.sumaProgrGeomCreandoProgr(78,-2,3), 0);
+    }
+    @Test
+    public void testSumaProgrGeomCreandoProgrRazonRacional() {
+        assertEquals(3, App.sumaProgrGeomCreandoProgr(4,-0.5,3), 0);
+    }
+    @Test
+    public void testSumaProgrGeomCreandoProgrRazon0() {
+        assertEquals(4.0, App.sumaProgrGeomCreandoProgr(4,0,3), 0);
+    }
+    @Test
+    public void testSumaProgrGeomCreandoProgrN0() {
+        assertEquals(4.0, App.sumaProgrGeomCreandoProgr(4,0,0), 0);
+    }
 
 }

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="org.entrg6.AppTest" time="0.076" tests="15" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="org.entrg6.AppTest" time="0.045" tests="28" errors="0" skipped="0" failures="0">
   <properties>
     <property name="java.specification.version" value="22"/>
     <property name="sun.cpu.isalist" value="amd64"/>
@@ -15,7 +15,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="ES"/>
     <property name="sun.boot.library.path" value="C:\Program Files\Java\jdk-22\bin"/>
-    <property name="sun.java.command" value="C:\Users\pablo\AppData\Local\Temp\surefire11529489221332954877\surefirebooter1896279532573107537.jar C:\Users\pablo\AppData\Local\Temp\surefire11529489221332954877 2025-03-22T17-57-15_759-jvmRun1 surefire12613158688379634491tmp surefire_011957253414263772400tmp"/>
+    <property name="sun.java.command" value="C:\Users\pablo\AppData\Local\Temp\surefire17925994066367873899\surefirebooter13918901677031110078.jar C:\Users\pablo\AppData\Local\Temp\surefire17925994066367873899 2025-03-23T17-20-51_504-jvmRun1 surefire6994436245037688212tmp surefire_08139664344072385559tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="E:\Universidad\Asignaturas\Programacion_II\Ejercicios\Entrega_6\target\test-classes;E:\Universidad\Asignaturas\Programacion_II\Ejercicios\Entrega_6\target\classes;C:\Users\pablo\.m2\repository\junit\junit\4.13.1\junit-4.13.1.jar;C:\Users\pablo\.m2\repository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -30,7 +30,7 @@
     <property name="line.separator" value="&#10;"/>
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
-    <property name="surefire.real.class.path" value="C:\Users\pablo\AppData\Local\Temp\surefire11529489221332954877\surefirebooter1896279532573107537.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\pablo\AppData\Local\Temp\surefire17925994066367873899\surefirebooter13918901677031110078.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="22.0.2+9-70"/>
@@ -58,19 +58,32 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="66.0"/>
   </properties>
-  <testcase name="testEXTaylorRecursivoCeroTodo" classname="org.entrg6.AppTest" time="0.013"/>
-  <testcase name="testMediaArmonicaNegativos" classname="org.entrg6.AppTest" time="0.003"/>
+  <testcase name="testEXTaylorRecursivoCeroTodo" classname="org.entrg6.AppTest" time="0.004"/>
+  <testcase name="testMediaArmonicaNegativos" classname="org.entrg6.AppTest" time="0.002"/>
+  <testcase name="testSumaProgrGeomCreandoProgr" classname="org.entrg6.AppTest" time="0.002"/>
+  <testcase name="testSumaProgrGeomCreandoProgrNegativa" classname="org.entrg6.AppTest" time="0"/>
   <testcase name="testEXTaylorRecursivoCeroN" classname="org.entrg6.AppTest" time="0"/>
   <testcase name="testEXTaylorRecursivoCeroX" classname="org.entrg6.AppTest" time="0"/>
   <testcase name="testEXTaylorNegativo" classname="org.entrg6.AppTest" time="0"/>
+  <testcase name="testSumaNEnteros1" classname="org.entrg6.AppTest" time="0.001"/>
   <testcase name="testMediaArmonicaElemento0" classname="org.entrg6.AppTest" time="0"/>
   <testcase name="testEXTaylor" classname="org.entrg6.AppTest" time="0"/>
   <testcase name="testEXTaylorRecursivoNegativo" classname="org.entrg6.AppTest" time="0"/>
-  <testcase name="testEXTaylorRecursivo" classname="org.entrg6.AppTest" time="0"/>
+  <testcase name="testEXTaylorRecursivo" classname="org.entrg6.AppTest" time="0.001"/>
   <testcase name="testMediaArmonicaSumaInversosEsCero" classname="org.entrg6.AppTest" time="0"/>
-  <testcase name="testEXTaylorCeroN" classname="org.entrg6.AppTest" time="0"/>
+  <testcase name="testSumaProgrGeomCreandoProgr0" classname="org.entrg6.AppTest" time="0"/>
+  <testcase name="testSumaProgrGeomCreandoProgrRazonRacional" classname="org.entrg6.AppTest" time="0"/>
+  <testcase name="testSumaProgrGeomCreandoProgrRazon0" classname="org.entrg6.AppTest" time="0"/>
+  <testcase name="testEXTaylorCeroN" classname="org.entrg6.AppTest" time="0.001"/>
   <testcase name="testEXTaylorCeroX" classname="org.entrg6.AppTest" time="0"/>
   <testcase name="testMediaArmonica" classname="org.entrg6.AppTest" time="0"/>
+  <testcase name="testSumaNEnterosMetiendoNegativo" classname="org.entrg6.AppTest" time="0"/>
+  <testcase name="testSumaProgrGeom" classname="org.entrg6.AppTest" time="0.001"/>
+  <testcase name="testSumaProgrGeom0" classname="org.entrg6.AppTest" time="0"/>
   <testcase name="testEXTaylorCeroTodo" classname="org.entrg6.AppTest" time="0"/>
-  <testcase name="testMediaArmonicaVacia" classname="org.entrg6.AppTest" time="0"/>
+  <testcase name="testSumaProgrGeomCreandoProgrN0" classname="org.entrg6.AppTest" time="0"/>
+  <testcase name="testMediaArmonicaVacia" classname="org.entrg6.AppTest" time="0.001"/>
+  <testcase name="testSumaProgrGeomNegativa" classname="org.entrg6.AppTest" time="0"/>
+  <testcase name="testSumaProgrGeomVacia" classname="org.entrg6.AppTest" time="0"/>
+  <testcase name="testSumaNEnterosMayorQue1" classname="org.entrg6.AppTest" time="0"/>
 </testsuite>

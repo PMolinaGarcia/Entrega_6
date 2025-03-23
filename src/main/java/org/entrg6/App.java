@@ -1,6 +1,8 @@
 package org.entrg6;
 import java.math.BigDecimal;
 import java.util.*;
+import java.util.stream.DoubleStream;
+import java.util.stream.Stream;
 
 
 import excepciones.*;
@@ -42,6 +44,40 @@ public class App
     /*
     Ejercicio 33
      */
+
+    /*
+    Primera versión del código:
+
+    public static double sumaProgrGeom(DoubleStream progresion){
+        return 0.0;
+    }
+
+
+    Segunda versión del código:
+     */
+    public static double sumaProgrGeom(DoubleStream progresion){
+        return progresion.reduce((num1,num2)->num1+num2).orElse(0);
+    }
+
+    /*
+    Tercera versión del código, en la que creamos la progresión dentro del método, definiendo únicamente razón,
+    primer término y límite:
+
+
+    public static double sumaProgrGeomCreandoProgr(int primerTermino, double razon, int nTermino) {
+        DoubleStream progresion = DoubleStream.iterate(primerTermino, x -> x * razon).limit(nTermino);
+        return progresion.reduce((num1, num2) -> num1 + num2).orElse(0);
+    }
+
+     */
+
+    /*
+    Cuarta versión, que corrige el primer término en el último test:
+     */
+    public static double sumaProgrGeomCreandoProgr(int primerTermino, double razon, int nTermino) {
+        DoubleStream progresion = DoubleStream.iterate(primerTermino, x -> x * razon).limit(nTermino);
+        return progresion.reduce((num1, num2) -> num1 + num2).orElse(primerTermino);
+    }
 
 
 
